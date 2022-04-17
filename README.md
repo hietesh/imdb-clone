@@ -14,3 +14,5 @@ This project is made using HTML,CSS and vanilla javascript
 
 # Start the project
 Just open the index.html file to start the project
+
+https://lucent-griffin-134763.netlify.app/ 
