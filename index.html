@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IMDb</title>
+</head>
+<body>
+    <!-- Navigation start -->
+    <nav class="flex ai-jc-sb">
+        <div class="left-nav">
+            <figure>
+                <img src="./assets/images/imdb-logo.svg" alt="imdb-logo"> 
+            </figure>
+        </div>
+        <div class="center-nav">
+            <div class="search-section">
+                <input type="text" placeholder="Search IMDb" tabindex="0"/>
+                <div class="autocom-box" tabindex="1">
+                    <ul></ul>
+                </div>
+             </div>
+             <!-- <div class="icon">
+                <i class="fa fa-search"></i>
+             </div> -->
+        </div>
+        <div class="right-nav">
+            <div class="favourites">
+                <p><a href="./fav-movie.html">Favourites</a></p>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Movie Carousel Start-->
+    <div class="mov-carousel">
+        <div class="container">
+            <div class="carousel-box">
+                
+                <div class="slides">
+                    <a href="./movie-detail.html?id=tt3735246" onclick="movieClicked({imdbID:'tt3735246'})">
+                        <figure>
+                            <img src="./assets/images/posters/2-india-movie-poster-design-hindi-bjirao-mastani.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+                <div class="slides">
+                    <a href="./movie-detail.html?id=tt1836912" onclick="movieClicked({imdbID:'tt1836912'})">
+                        <figure>
+                            <img src="./assets/images/posters/20-indian-movie-poster-design-shaitan.preview.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+                <div class="slides">
+                    <a href="./movie-detail.html?id=tt7010156" onclick="movieClicked({imdbID:'tt7010156'})">
+                        <figure>
+                            <img src="./assets/images/posters/15-india-movie-poster-design-maragatha-nanayam.preview.jpg" alt="">
+                        </figure>
+                    </a>      
+                </div>
+                <!-- Next and Prev Buttons -->
+                <a class="prev noselect" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next noselect" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+        </div> 
+    </div>
+    <!-- Movie Carousel End -->
+    <!-- Fan Favourites Start-->
+    <section class="fan-favourites" id="fan-favs">
+        <div class="container">
+            <h2>Fan Favourites</h2>
+            <div class="movies-container flex">
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt8178634" onclick="movieClicked({imdbID:'tt8178634'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGQ3ZjMwZDctZTFkMi00ZjUwLTlmMDUtNDZlYzJjNzZiNTg5XkEyXkFqcGdeQXVyMTMzODk3NDU0._V1_SX300.jpg" alt="RRR">
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt7366338" onclick="movieClicked({imdbID:'tt7366338'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZGQ2YmMxZmEtYjI5OS00NzlkLTlkNTEtYWMyMzkyMzc2MDU5XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg" alt="Chernobyl">
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt7286456" onclick="movieClicked({imdbID:'tt7286456'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg" alt="Joker">
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt1877830" onclick="movieClicked({imdbID:'tt1877830'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_SX300.jpg" alt="Batman">
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt3794354" >
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGM2ZjEzNzQtNzhiNi00ZmFkLTgzZjItZmU4YTZjMTJmNmRhXkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_SX300.jpg" alt="Sonic Hedgehog" >
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt11301946" onclick="movieClicked({imdbID:'tt11301946'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDc3MDU5YmQtMjJkYy00YWIwLWJkYmItZjM5NjA3ZGU4MGZkXkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Beast">    
+                    </a>
+                </div>
+            </div>
+            <a class="prev noselect">&#10094;</a>
+            <a class="next noselect">&#10095;</a>
+        </div>
+    </section>
+    
+    <!-- Fan Favourites End -->
+    
+    <!-- Fan Favourites Start-->
+    <section class="fan-favourites" id="theater">
+        <div class="container">
+            <h2>In Theaters</h2>
+            <div class="movies-container flex">
+                <div class="fav-box">
+                     <a href="./movie-detail.html?id=tt11301946" onclick="movieClicked({imdbID:'tt11301946'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDc3MDU5YmQtMjJkYy00YWIwLWJkYmItZjM5NjA3ZGU4MGZkXkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Beast" />
+                     </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt1877830" onclick="movieClicked({imdbID:'tt1877830'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_SX300.jpg" alt="Batman">
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt8178634" onclick="movieClicked({imdbID:'tt8178634'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGQ3ZjMwZDctZTFkMi00ZjUwLTlmMDUtNDZlYzJjNzZiNTg5XkEyXkFqcGdeQXVyMTMzODk3NDU0._V1_SX300.jpg" alt="RRR">
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt10083340" onclick="movieClicked({imdbID:'tt10083340'})">
+                      <img src="https://m.media-amazon.com/images/M/MV5BN2M4NDM2NDItMzgzNy00OWRiLThhNjEtZDA2OWMyNTcwYzRjXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Gangubai Kathiawadi"/>
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt10811166" onclick="movieClicked({imdbID:'tt10811166'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZjI0YmMzNDctZGFkZi00NmIyLTk5NWEtMTU1MGRmMDQwNWU2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="The Kashmir Files"/>
+                    </a>
+                </div>
+                <div class="fav-box">
+                    <a href="./movie-detail.html?id=tt9419884" onclick="movieClicked({imdbID:'tt9419884'})">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_SX300.jpg" alt="Dr Strange in the Multiverse of Madness">
+                    </a>
+                </div>
+                 
+                
+            </div>
+            <a class="prev noselect">&#10094;</a>
+            <a class="next noselect">&#10095;</a>
+        </div>
+    </section>
+    
+    <!-- Fan Favourites End -->
+
+    <!-- snackbar start-->
+    <div id="snackbar"></div>
+    <!-- snackbar end -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

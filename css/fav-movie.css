@@ -1,0 +1,57 @@
+figure.logos{
+    text-align: center;
+    margin: 0 auto;
+    padding: 35px 0px;
+    cursor: pointer;
+}
+.logos img{
+    max-width: 100px;
+}
+
+button.remove-btn{
+    background: var(--yellow);
+    border: none;
+    padding: 7px 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+button.remove-btn:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+.fav-movies .container .item{
+   flex: 25%; 
+}
+
+.fav-movies .item img {
+    max-height: 200px;
+    max-width: 150px;
+}
+
+.favs-title{
+    margin-bottom:20px;
+}
+
+.desc h2 {
+    font-size: 16px;
+}
+
+.desc p {
+    font-size: 14px;
+}
+
+@media(max-width:575px){
+    .fav-movies .container{
+        text-align: center;
+    }
+    .fav-movies .container .item {
+       padding-left:10px;
+    }
+}
